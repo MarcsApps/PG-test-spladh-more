@@ -39,8 +39,6 @@
         <!-- Include the jQuery Mobile library -->
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-         <script type="text/javascript" src="js/myjs.js"></script>
-
         <title>VS Productions</title>
     </head>
     <body>
@@ -49,11 +47,12 @@
                 <img src="res/icon/android/vs_logo.jpg" />
                 <br />
                 VS Productions <br />
-                &copy; 2015
+                &copy; 2015 <br />
+                <a href="#home" class="ui-btn">Start</a>
             </center>
         </div>
         <!-- home -->
-        <div data-role="page" id="home" class="page" data-ajax="false">
+        <div data-role="page" id="home" class="page">
 
             <div data-role="panel" id="home_panel" data-dismissible="true" data-swipe-close="true" data-display="overlay">
                 <h2>Navigation</h2>
@@ -66,6 +65,7 @@
           <div data-role="header">
             <h1>Welcome to my app</h1>
             <a href="#home_panel" class="ui-btn ui-btn-left ui-btn-icon-notext ui-icon-grid ui-corner-all">Navigation</a>
+            <a id="home_refresh" onclick="getBlogs();" class="ui-btn ui-btn-right ui-btn-icon-notext  ui-icon-refresh ui-corner-all">Refresh</a>
           </div>
 
           <div data-role="main" class="ui-content">
@@ -166,6 +166,7 @@
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/myjs.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
