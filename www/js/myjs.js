@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	window.setTimeout(function(){
+		window.location = '#home';
+	}, 2000)
 
 	var $loader = '<center><img src="img/loader.gif" /></center>';
 	var $base_url = 'http://www.varunshrivastava.in';
@@ -25,7 +28,6 @@ $(document).ready(function(){
     });
 
 	$('document, body').on('click', '#blog_link', function(){
-		console.log($(this).attr('data-blog-id'));
 		var $url = $base_url+'/site/getBlog/'+$(this).attr('data-blog-id');
 		var $blogContent = $('#blog_content');
 		$blogContent.html($loader);
