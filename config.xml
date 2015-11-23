@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.vs" version="1.0.0">
   <name>Varun Shrivastava</name>
   <description>This is my personal very first mobile application</description>
   <author href="http://www.varunshrivastava.in" email="varunshrivastava007@gmail.com">Varun Shrivastava</author>
